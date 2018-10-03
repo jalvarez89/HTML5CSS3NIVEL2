@@ -1,0 +1,79 @@
+*{
+	padding:0px;
+	margin:0px;
+	border:0px;
+	font-family:sans-serif;
+}
+.planes__contenedor{
+	width:25%;
+	border:2px solid gray;
+	margin:100px 10px;
+	border-radius:50px 50px 50px 0px;
+	float:left;
+}
+.planes__contenedor:nth-child(2) .planes__cabecera{
+	background:gray;
+	border-radius:47px 47px 0px 0px;
+}
+.planes__cabecera{
+	height:110px;
+	border-bottom:1px solid gray;
+	text-align:center;
+	padding:10px;
+}
+.planes__cabecera > h3{
+	text-transform:uppercase;
+	color:purple;
+	letter-spacing:2px;
+}
+.planes__contenedor:nth-child(2) .planes__cabecera > h3{
+	color:white;
+}
+.planes__cabecera > h3 + p{
+	font-size:50px;
+	margin:10px 0;
+	color:tomato;
+}
+.planes__contenedor:nth-child(2) .planes__cabecera > h3 + p{
+	color:white;
+}
+.planes__cabecera p > sub{
+	font-size:20px;
+	color:black;
+	position:relative;
+	top:-12px;
+}
+li[class*="items"]{
+	list-style:none;
+	text-align:center;
+	padding:10px;
+
+}
+li[class*="items"]:nth-child(2n){
+	background:rgba(200,200,200,.3);
+}
+.planes__cuerpo__enlace{
+	width:100%;
+	height:70px;
+	background:purple;
+	text-align:center;
+	border-radius:0px 0px 48px 0px;
+	transition:1s;
+}
+.planes__contenedor:nth-child(2) .planes__cuerpo .planes__cuerpo__enlace{
+	background:grey;
+	}
+a[class="boton-compra"]{
+	color :white;
+	text-decoration:none;
+	position:relative;
+	top:24px;
+	font-size:20px;
+	font-weight:bold;
+}
+.planes__cuerpo__enlace:hover{
+	background:gray;
+}
+.planes__contenedor:nth-child(2) .planes__cuerpo .planes__cuerpo__enlace:hover{
+	background:purple;
+}

@@ -1,0 +1,83 @@
+/*Selector Hijo Directo
+.contenedor > p{
+	color:yellow;
+}
+*/
+/*Selector Hermano Adyacente
+.contenedor p + p{
+	color:yellow;
+}
+*/
+/*Selector Hermano General
+.contenedor p ~ p{
+	color:yellow;
+}
+*/
+.contenedor p ~ p{
+	color:yellow;
+}
+li{
+	display: inline-block;
+	margin:10px;
+	padding:15px;
+}
+li a{
+	text-decoration:none;
+}
+/*Selector de pseudoclases*/
+li:hover{
+	background:pink;
+}
+li:link{
+	background:orange;
+}
+li:visited{
+	background:green;
+}
+li:active{
+	background:yellow;
+}
+input:focus{
+	background:yellow;
+}
+input:checked{
+	display:none;
+}
+li:after{
+	content:'';
+	width:10px;
+	height:10px;
+	background:orange;
+	position:absolute;
+}
+/*Selector Atributo Presente*/
+a[class]{
+	background:gray;
+}
+/*Selector de Atributo igual*/
+a[class="diferente"]{
+	background:yellow;
+}
+/*Selector Atributo Contenido */
+a[href*=".com"]{
+	background:purple;
+}
+/*Selector de pseudoclases*/
+ul li:first-child{
+	background:lightblue;
+}
+ul li:last-child{
+	background:black;
+}
+ul li:nth-child(2){
+	background:yellow;
+}
+ul li:nth-child(3){
+	background:red;
+}
+ul li:nth-child(2n+1){
+	background:green;
+}
+ul li:not(.diferente){
+	background:pink;
+}
